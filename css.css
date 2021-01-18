@@ -3,6 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    background-image: url('masoud.jpeg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
 nav {
     display:flex;
     justify-content: space-around;
