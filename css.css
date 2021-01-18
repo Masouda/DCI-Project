@@ -69,6 +69,16 @@ a {
     visibility: visible;
     transform: scaleX(1);
   }
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
 @media screen and (max-width:1076px){
     .nav-links{
    width: 60%;
