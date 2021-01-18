@@ -8,7 +8,7 @@ nav {
     justify-content: space-around;
     align-items:center;
     min-height:8vh;
-    background-color: #5d4954;
+    background-color:black;
     font-family: 'Open Sans', sans-serif;
 }
 .logo {
@@ -47,11 +47,11 @@ nav {
 }
 a {
     position: relative;
-    color: rgba(226, 214, 214, 0.959);
+    color: rgba(255, 255, 255, 0.959);
     text-decoration: none;
   }
   a:hover {
-    color: rgba(226, 214, 214, 0.959);
+    color:  rgba(255, 255, 255, 0.959);
   }
   a::before {
     content: "";
@@ -60,7 +60,7 @@ a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(226, 214, 214, 0.959);
+    background-color: rgba(255, 255, 255, 0.959);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -82,7 +82,7 @@ a {
         right:0px;
         height: 92vh;
         top:8vh;
-        background-color: #5d4954;
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
