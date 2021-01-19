@@ -33,13 +33,21 @@ nav {
    .nav-lists li {
     list-style:none;
    }
-.nav-links a {
-    color:black;
+.p2link {
+    color: black;
     letter-spacing:3px;
     text-decoration:none;
     font-weight: bold;
     font-size: 14px;
 
+}
+#about {
+    border-bottom: 2px solid black;
+    color: black;
+    letter-spacing:3px;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 14px;
 }
 .burger {
     display: none;
@@ -98,7 +106,6 @@ a {
  .masoudName p {
     position: relative;
     font-family: pacifico;
-    text-transform: uppercase;
     font-size: 3em;
     letter-spacing: 15px;
     overflow: hidden;
@@ -116,14 +123,13 @@ a {
   }
   p {
     position: relative;
-    font-family: font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
+    font-family: 'Cormorant Garamond';
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 10px;
     overflow: hidden;
     margin: 30px 0 0 150px;
-    color:black;
+    color: white;
   }
   .footer {
     display:flex;
