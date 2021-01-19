@@ -38,7 +38,7 @@ nav {
     letter-spacing:3px;
     text-decoration:none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
 
 }
 .burger {
@@ -112,6 +112,7 @@ a {
   }
   .text {
     margin: 80px 90px 0 90px;
+    height: 250px;
   }
   p {
     position: relative;
@@ -122,15 +123,36 @@ a {
     letter-spacing: 15px;
     overflow: hidden;
     margin: 30px 0 0 30px;
-    color: white;
+    color:black;
   }
-  .text p:hover{
-      color:lightblue;
-      transition: all 2s ease;
-      background-color: rgba(var(--color-highlight), 0.5)
-      border-radius: 10px;
-      font-size:4em;
+  .footer {
+    display:flex;
+    justify-content: space-around;
+    margin: 80px 90px 0 90px;
+    align-items:center;
+    min-height:8vh;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 1px solid black;
   }
+  .footer-links{
+    display:flex;
+    justify-content:space-around;
+    width: 40%;
+    list-style:none;
+    margin-left: 600px;
+   }
+   .footer-lists li {
+    list-style:none;
+   }
+.footer-links a {
+    color:black;
+    letter-spacing:3px;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
   @keyframes animate {
     0% {
       background-position: -500%;
