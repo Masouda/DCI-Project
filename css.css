@@ -8,17 +8,17 @@ body {
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+
   }
 nav {
     display:flex;
     justify-content: space-around;
     align-items:center;
     min-height:8vh;
-    background-color:black;
     font-family: 'Open Sans', sans-serif;
 }
 .logo {
-     color: rgba(226, 214, 214, 0.959);
+     color: black;
      text-transform: uppercase;
      letter-spacing: 5px;
      font-size: 20px;
@@ -34,11 +34,11 @@ nav {
     list-style:none;
    }
 .nav-links a {
-    color:rgba(226, 214, 214, 0.959);
+    color:black;
     letter-spacing:3px;
     text-decoration:none;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
 
 }
 .burger {
@@ -48,16 +48,16 @@ nav {
 .burger div {
     height: 3px;
     width:25px;
-    background-color:rgba(226, 214, 214, 0.959);;
+    background-color:black;
     margin: 5px;
 }
 a {
     position: relative;
-    color: rgba(255, 255, 255, 0.959);
+    color: black;
     text-decoration: none;
   }
   a:hover {
-    color:  rgba(255, 255, 255, 0.959);
+    color:  black;
   }
   a::before {
     content: "";
@@ -66,7 +66,7 @@ a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.959);
+    background-color: black;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -74,6 +74,11 @@ a {
   a:hover::before {
     visibility: visible;
     transform: scaleX(1);
+  }
+  .search-container{
+      display: flex;
+      justify-content: flex-end;
+      height: 25px;
   }
   .search-container button {
     float: right;
@@ -85,6 +90,56 @@ a {
     border: none;
     cursor: pointer;
   }
+  .masoudName {
+      border-bottom: 1px solid black;
+      height: 80px;
+      margin: 0 90px 0 90px;
+     }
+ .masoudName p {
+    position: relative;
+    font-family: pacifico;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 15px;
+    overflow: hidden;
+    margin: 30px 0 0 30px;
+    background: linear-gradient(90deg,rgb(215, 228, 236),black,rgb(215, 228, 236));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 12s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:rgba(255, 255, 255, 0);
+  }
+  .text {
+    margin: 80px 90px 0 90px;
+  }
+  p {
+    position: relative;
+    font-family: 'Caveat', cursive;;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 15px;
+    overflow: hidden;
+    margin: 30px 0 0 30px;
+    color: white;
+  }
+  .text p:hover{
+      color:lightblue;
+      transition: all 2s ease;
+      background-color: rgba(var(--color-highlight), 0.5)
+      border-radius: 10px;
+      font-size:4em;
+  }
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
 @media screen and (max-width:1076px){
     .nav-links{
    width: 60%;
@@ -98,7 +153,6 @@ a {
         right:0px;
         height: 92vh;
         top:8vh;
-        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -117,14 +171,15 @@ a {
     .nav-active {
         transform: translateX(0%);
     }
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
+      @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+    
+        }
     }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-
-    }
-}
+    
